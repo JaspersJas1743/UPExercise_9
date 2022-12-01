@@ -1,0 +1,57 @@
+﻿<Window x:Class="Задание__9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задание__9" mc:Ignorable="d" Icon="Assets/Images/icon.png"
+        Height="515" Width="940"  ResizeMode="NoResize" WindowStyle="None">
+    <Grid Name="MainGrid" Style="{DynamicResource MyGrid}">
+        <TextBlock Text="220_Смирнов Алексей_ПР№9" Style="{DynamicResource MyHeader}" MouseDown="Drag" Height="16" Width="940"/>
+        <Button Style="{DynamicResource MyExit}" Click="ExitClick" Margin="0 0 0 0" VerticalContentAlignment="Center">
+            <Button.ToolTip>
+                <ToolTip Content="Закрыть" Style="{DynamicResource MyToolTip}" Width="62"/>
+            </Button.ToolTip>
+        </Button>
+        <Button Style="{DynamicResource MyDeactivate}" Click="DeactivateClick" Margin="0 0 18 0" VerticalContentAlignment="Center">
+            <Button.ToolTip>
+                <ToolTip Content="Свернуть" Style="{DynamicResource MyToolTip}" Width="70"/>
+            </Button.ToolTip>
+        </Button>
+        <Grid Margin="0 60 0 0" Name="GridForStackPanel" Style="{DynamicResource MyGrid}"/>
+        <TextBox Style="{DynamicResource MyTextBox}" Width="250" Height="30" Name="TableNameBox" Foreground="LightGray"
+            GotFocus="TextBoxGotFocus" LostFocus="TableNameBoxLostFocus" VerticalAlignment="Top" Text="Введите название таблицы"
+            HorizontalAlignment="Left" Margin="20 30 0 0" VerticalContentAlignment="Center" Padding="10 0 0 0" KeyDown="TableNameBoxKeyDown">
+            <TextBox.ToolTip>
+                <ToolTip Content="Текст над таблицей MS Word" Style="{DynamicResource MyToolTip}" Width="185"/>
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox Style="{DynamicResource MyTextBox}" Width="250" Height="30" Name="FileNameBox" Foreground="LightGray"
+            VerticalAlignment="Top" GotFocus="TextBoxGotFocus" LostFocus="FileNameBoxLostFocus" Padding="10 0 0 0"
+            Text="Введите имя файла (без .docx)" KeyDown="FileNameBoxKeyDown" HorizontalAlignment="Right"
+            Margin="0 30 180 0" PreviewTextInput="FileNameChanged" VerticalContentAlignment="Center">
+            <TextBox.ToolTip>
+                <ToolTip Content="Имя, под которым будет сохранена таблица" Style="{DynamicResource MyToolTip}" Width="260"/>
+            </TextBox.ToolTip>
+        </TextBox>
+        <Button Width="150" Height="30" Click="CreateTableClick" Style="{DynamicResource MyButton}"
+            VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 30 20 0" Content="Создать таблицу">
+            <Button.ToolTip>
+                <ToolTip Content="Создать таблицу в MS Word" Style="{DynamicResource MyToolTip}" Width="170"/>
+            </Button.ToolTip>
+        </Button>
+        <Button Width="40" Height="40" Content="➕" FontSize="23" Click="AddBlockClick" Margin="70 70 0 0"
+            Name="AddBlockButton" VerticalContentAlignment="Center" VerticalAlignment="Top"
+            HorizontalAlignment="Left" Style="{DynamicResource MyActivateButton}">
+            <Button.ToolTip>
+                <ToolTip Content="Добавить строку таблицы" Style="{DynamicResource MyToolTip}" Width="168"/>
+            </Button.ToolTip>
+        </Button>
+        <Button Width="40" Height="40" Content="➖" FontSize="23" Click="RemoveBlockClick" Margin="120 70 0 0"
+            Name="RemoveBlockButton" VerticalContentAlignment="Center" VerticalAlignment="Top"
+            HorizontalAlignment="Left" Style="{DynamicResource MyDeactivateButton}">
+            <Button.ToolTip>
+                <ToolTip Content="Нет строк для удаления" Style="{DynamicResource MyToolTip}" Width="150"/>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+</Window>

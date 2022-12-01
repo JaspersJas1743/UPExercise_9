@@ -1,0 +1,115 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Задание №9/1.0.0": {
+        "dependencies": {
+          "NetOfficeFw.Word": "1.9.1"
+        },
+        "runtime": {
+          "Задание №9.dll": {}
+        }
+      },
+      "NetOfficeFw.Core/1.9.1": {
+        "runtime": {
+          "lib/net462/NetOffice.dll": {
+            "assemblyVersion": "1.9.1.0",
+            "fileVersion": "1.9.1.0"
+          }
+        }
+      },
+      "NetOfficeFw.Office/1.9.1": {
+        "dependencies": {
+          "NetOfficeFw.Core": "1.9.1",
+          "stdole": "7.0.3300"
+        },
+        "runtime": {
+          "lib/net462/OfficeApi.dll": {
+            "assemblyVersion": "1.9.1.0",
+            "fileVersion": "1.9.1.0"
+          }
+        }
+      },
+      "NetOfficeFw.VBIDE/1.9.1": {
+        "dependencies": {
+          "NetOfficeFw.Core": "1.9.1",
+          "NetOfficeFw.Office": "1.9.1"
+        },
+        "runtime": {
+          "lib/net462/VBIDEApi.dll": {
+            "assemblyVersion": "1.9.1.0",
+            "fileVersion": "1.9.1.0"
+          }
+        }
+      },
+      "NetOfficeFw.Word/1.9.1": {
+        "dependencies": {
+          "NetOfficeFw.Core": "1.9.1",
+          "NetOfficeFw.Office": "1.9.1",
+          "NetOfficeFw.VBIDE": "1.9.1",
+          "stdole": "7.0.3300"
+        },
+        "runtime": {
+          "lib/net462/WordApi.dll": {
+            "assemblyVersion": "1.9.1.0",
+            "fileVersion": "1.9.1.0"
+          }
+        }
+      },
+      "stdole/7.0.3300": {
+        "runtime": {
+          "lib/net10/stdole.dll": {
+            "assemblyVersion": "7.0.3300.0",
+            "fileVersion": "7.0.9466.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Задание №9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetOfficeFw.Core/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d3+XKMKZ8VoBUDrvrBkw5N9NbEHWnauJW5kIWR+Raxtfwd9M6ddcvbn5YbvcWtK5JMwvm3DBnOIDakQaCJwQ8g==",
+      "path": "netofficefw.core/1.9.1",
+      "hashPath": "netofficefw.core.1.9.1.nupkg.sha512"
+    },
+    "NetOfficeFw.Office/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NB8qhnmLuqaa9Ov0aBihwGlJEKaGzBVIaIC6B9z50orKRZP71WRdCc7a/o+9Z4pMP92h4CEZlUMHH2DrCXzW5g==",
+      "path": "netofficefw.office/1.9.1",
+      "hashPath": "netofficefw.office.1.9.1.nupkg.sha512"
+    },
+    "NetOfficeFw.VBIDE/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6vD435VOFnJjCB4AhOLGM0jA28q9qw9zKkAHQPhN9glGdONeFoVH0Vdk0dG5RyBCpaUX9v4WFGAqmUshf9t5YA==",
+      "path": "netofficefw.vbide/1.9.1",
+      "hashPath": "netofficefw.vbide.1.9.1.nupkg.sha512"
+    },
+    "NetOfficeFw.Word/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ul+qIHdJysUKNIzyuWH2dRq39GI0uapT7dxkc+4zHG2LsXuOKHjz6trxojlkomoKTD1Gk6/O8e6RKZ1upEb3A==",
+      "path": "netofficefw.word/1.9.1",
+      "hashPath": "netofficefw.word.1.9.1.nupkg.sha512"
+    },
+    "stdole/7.0.3300": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p9WhjNp/gM2z80u+xNA1XXFek57iybUUJaDnQooKfdct3vGIpmDzLdL7Rq4ZmFzZc3LN3SFs5bRIE7j/+gLn5Q==",
+      "path": "stdole/7.0.3300",
+      "hashPath": "stdole.7.0.3300.nupkg.sha512"
+    }
+  }
+}
